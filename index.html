@@ -1,0 +1,156 @@
+<html>
+<head>
+	<title>formaFIT</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&family=Space+Grotesk&family=Staatliches&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">
+
+
+</head>
+<body onload="dondecuando();">
+	<header>
+		<div class="top-container">
+			<p class="logo">formaFIT</p>
+			<div id="links">
+			<nav>
+				<a href="#hero" class="nav">INICIO</a>
+				<a href="#actividades" class="nav">ACTIVIDADES</a>
+				<a href="#horarios" class="nav">HORARIOS</a>
+				<a href="#nuestros-centros" class="nav">NOSOTROS</a>
+				<a href="#unete" class="nav">formaFIT+</a>
+				<a href="#reserva" class="nav">CONTACTO</a>
+				<a href="#final" class="nav">MÁS INFO</a>
+			</nav>
+			</div>
+			 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			 	<i class="fa fa-bars"></i>
+			 </a>
+		</div>
+	</header>
+	<section id="hero" class="h-intro">
+		<h1>WORK HARD,</h1>
+		<div class="title">
+                <div class="dynamic-title cd-headline clip is-full-width">
+                    <p></p>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">&nbsp;<span class="gold-title">NEVER GIVE UP</span></b>
+                        <b>&nbsp;<span class="gold-title">STAY POSITIVE.</span></b>
+                        <b>&nbsp;<span class="gold-title">PLAY HARDER.</span></b>
+                        <b>&nbsp;<span class="gold-title">MAKE IT HAPPEN.</span></b>
+                    </span>
+                </div>  
+            </div>
+		<h3>SOLICITÁ YA TU ENTRENAMIENTO DE PRUEBA.</h3>
+		<form action="#">
+			<button>MÁS INFORMACIÓN</button>
+		</form>
+	</section>
+	<section id="actividades">
+		<div class="container">
+		  <h1>ACTIVIDADES</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  ipsum dolor sit amet, consectetur adipisicing elit, sed dipisicing elitdipisi
+		  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod do eiusmod</p>
+	    </div>
+	</section>
+	<section id="lista-actividades">
+		<div class="slideshow-container">
+				<div class="act-fade">
+					<h2>SPINNING</h2>
+					<h3>MALVÍN & PUNTA CARRETAS</h3>
+					<button>VER MÁS ➕</button>
+					<div class="mid" style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+				</div>
+				<div class="act-fade">
+					<h2>THE ZONE</h2>
+					<h3>PUNTA CARRETAS</h3>
+					<button>VER MÁS ➕</button>
+					<div class="mid" style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+				</div>
+				<div class="act-fade">
+					<h2>YOGA</h2>
+					<h3>MALVÍN & PUNTA CARRETAS</h3>
+					<button>VER MÁS ➕</button>
+					<div class="mid" style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+				</div>
+				<div class="act-fade">
+					<h2>HIIT</h2>
+					<h3>MALVÍN & PUNTA CARRETAS</h3>
+					<button>VER MÁS ➕</button>
+					<div class="mid" style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+				</div>
+				<!-- Next y previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		        <!-- Los dots/circles -->
+		        <!--<div class="mid" style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+	</section>
+	<section id="centros">
+		<div class="container">
+			<h2>NUESTROS CENTROS</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+		</div>
+	</section>
+	<section id="lista-centros">
+		<div class="container">
+			<div class="cent">
+				<h2>PUNTA CARRETAS</h2>
+				<h4>DIRECCIÓN XXX</h4>
+				<button>VER MÁS ➕</button>
+			</div>
+			<div class="cent">
+				<h2>MALVÍN</h2>
+				<h4>DIRECCIÓN XXX</h4>
+				<button>VER MÁS ➕</button>
+			</div>
+		</div>		
+	</section>
+	<section id="formafitplus">
+		<div class="container">
+			<h2>formaFIT<span class="formafit+yellow">➕</span>, LA MEJOR PLATAFORMA FITNESS<span class="formafit+yellow"> ON DEMAND </span> PARA ENTRENAR<div class="dynamic-title cd-headline clip is-full-width"><span class="cd-words-wrapper"><b class="is-visible"><span class="gold-title" id="donde">DONDE</span></b><b><span class="gold-title" id="cuando">CUANDO</span></b></span>QUIERAS</div></h2>
+			<button>VER formaFIT➕</button>
+			<a href="##"><img src="appstore.jpg" id="appstore"></a>
+		    <a href="##"><img src="googleplay.jpg" id="googleplay"></a>
+		</div>
+	</section>
+	<section id="unite">
+		<div class="container">
+		<h2>VIVÍ NUESTRA EXPERIENCIA.</h2>
+		<h3>RESERVÁ TU CLASE DE PRUEBA Y DESAFIÁ TUS LÍMITES</h3>
+		<p>Nos pondremos en contacto contigo para brindarte más información</p>
+		<input type="text" name="nya" class="formulario" placeholder="Nombre y Apellido"><input type="email" name="email" class="formulario" placeholder="E-mail"><input type="text" name="nya" class="formulario" placeholder="Teléfono o celular"><select name="local">
+			<option value="selecciona">Selecciona un local</option>
+			<option value="malv">Malvín</option>
+			<option value="pc">Punta Carretas</option>
+		</select>
+		<button>SOLICITAR YA</button>
+		</div>
+	</section>
+</body>
+</html>
