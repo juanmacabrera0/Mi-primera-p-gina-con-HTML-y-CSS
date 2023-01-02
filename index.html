@@ -17,12 +17,12 @@
 			<p class="logo">formaFIT</p>
 			<div id="links">
 			<nav>
-				<a href="#hero" class="nav">INICIO</a>
+				<a href="#top-container" class="nav">INICIO</a>
 				<a href="#actividades" class="nav">ACTIVIDADES</a>
 				<a href="#horarios" class="nav">HORARIOS</a>
-				<a href="#nuestros-centros" class="nav">NOSOTROS</a>
-				<a href="#unete" class="nav">formaFIT+</a>
-				<a href="#reserva" class="nav">CONTACTO</a>
+				<a href="#centros" class="nav">NOSOTROS</a>
+				<a href="#formafitplus" class="nav">formaFIT+</a>
+				<a href="#unite" class="nav">CONTACTO</a>
 				<a href="#final" class="nav">MÁS INFO</a>
 			</nav>
 			</div>
@@ -46,8 +46,24 @@
             </div>
 		<h3>SOLICITÁ YA TU ENTRENAMIENTO DE PRUEBA.</h3>
 		<form action="#">
-			<button>MÁS INFORMACIÓN</button>
+			<button onclick="modal()" id="buttoninfo">MÁS INFORMACIÓN</button>
 		</form>
+	    <div id="myModal" class="modal">
+
+               <!-- Modal content -->
+               <div class="modal-content">
+               <span class="close" onclick="modal()">&times;</span>
+               <h2>CONOCÉ MÁS DE NUESTROS PLANES</h2>
+               <p>Nos pondremos en contacto contigo para brindarte más información.</p>
+               <input type="text" name="nya" class="formulario" placeholder="Nombre y Apellido"required><input type="email" name="email" class="formulario" placeholder="E-mail"         required><input type="text" name="nya" class="formulario" placeholder="Teléfono o celular" required><select name="local">
+		        <option value="selecciona">Selecciona un local</option>
+		        <option value="malv">Malvín</option>
+		        <option value="pc">Punta Carretas</option>
+	            </select>
+		        <button class="solicitar" onclick="modal()">SOLICITAR YA</button>
+         </div>
+
+</div>
 	</section>
 	<section id="actividades">
 		<div class="container">
@@ -62,17 +78,18 @@
 				<div class="act-fade">
 					<h2>SPINNING</h2>
 					<h3>MALVÍN & PUNTA CARRETAS</h3>
-					<button>VER MÁS ➕</button>
+					<button onclick="window.location='file:///C:/Users/USER/Desktop/Programaci%C3%B3n/Dise%C3%B1o%20web/formaFIT/spinning.html#top-container'">VER MÁS ➕</button>
 					<div class="mid" style="text-align:center">
                    <span class="dot" onclick="currentSlide(1)"></span>
                    <span class="dot" onclick="currentSlide(2)"></span>
                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
+                
 				</div>
 				<div class="act-fade">
 					<h2>THE ZONE</h2>
 					<h3>PUNTA CARRETAS</h3>
-					<button>VER MÁS ➕</button>
+					<button onclick="window.location='file:///C:/Users/USER/Desktop/Programaci%C3%B3n/Dise%C3%B1o%20web/formaFIT/thezone.html'">VER MÁS ➕</button>
 					<div class="mid" style="text-align:center">
                    <span class="dot" onclick="currentSlide(1)"></span>
                    <span class="dot" onclick="currentSlide(2)"></span>
@@ -80,9 +97,10 @@
                 </div>
 				</div>
 				<div class="act-fade">
+					
 					<h2>YOGA</h2>
 					<h3>MALVÍN & PUNTA CARRETAS</h3>
-					<button>VER MÁS ➕</button>
+					<button onclick="window.location='file:///C:/Users/USER/Desktop/Programaci%C3%B3n/Dise%C3%B1o%20web/formaFIT/yoga.html#horarios'">VER MÁS ➕</button>
 					<div class="mid" style="text-align:center">
                    <span class="dot" onclick="currentSlide(1)"></span>
                    <span class="dot" onclick="currentSlide(2)"></span>
@@ -92,7 +110,7 @@
 				<div class="act-fade">
 					<h2>HIIT</h2>
 					<h3>MALVÍN & PUNTA CARRETAS</h3>
-					<button>VER MÁS ➕</button>
+					<button onclick="window.location='file:///C:/Users/USER/Desktop/Programaci%C3%B3n/Dise%C3%B1o%20web/formaFIT/hiit.html#top-container'">VER MÁS ➕</button>
 					<div class="mid" style="text-align:center">
                    <span class="dot" onclick="currentSlide(1)"></span>
                    <span class="dot" onclick="currentSlide(2)"></span>
@@ -144,7 +162,7 @@
 		<h2>VIVÍ NUESTRA EXPERIENCIA.</h2>
 		<h3>RESERVÁ TU CLASE DE PRUEBA Y DESAFIÁ TUS LÍMITES</h3>
 		<p>Nos pondremos en contacto contigo para brindarte más información</p>
-		<input type="text" name="nya" class="formulario" placeholder="Nombre y Apellido"><input type="email" name="email" class="formulario" placeholder="E-mail"><input type="text" name="nya" class="formulario" placeholder="Teléfono o celular"><select name="local">
+		<input type="text" name="nya" class="formulario" placeholder="Nombre y Apellido" required><input type="email" name="email" class="formulario" placeholder="E-mail" required><input type="text" name="nya" class="formulario" placeholder="Teléfono o celular" required><select name="local">
 			<option value="selecciona">Selecciona un local</option>
 			<option value="malv">Malvín</option>
 			<option value="pc">Punta Carretas</option>
@@ -152,5 +170,38 @@
 		<button>SOLICITAR YA</button>
 		</div>
 	</section>
+<section id="final">
+	<div class="app">
+		<h4>DESCARGÁ NUESTRA APP</h4>
+		<img class="appstore" src="appstore.jpg">
+		<img class="playstore" src="playstore.jpg">
+	</div>
+	<div class="redes">
+		<h4>REDES SOCIALES</h4>
+		<img class="ig" src="instagram.jpg">
+		<img class="tw" src="twitter.jpg">
+		<img class="fb" src="facebook.jpg">
+	</div>
+	<div class="trabajo"><button><i class="fa fa-arrow-right" aria-hidden="true"></i> UNITE A NUESTRO EQUIPO</button></div>
+	<div class="direc">
+		<div class="dir1">
+			<h4>DIREC XXX PUNTA CARRETAS</h4>
+			<p>lorem lorem horarios ipsum
+			lorem lorem horarios ipsum</p>
+		</div>
+		<div class="dir2">
+			<h4>DIREC XXX MALVIN</h4>
+			<p>lorem lorem horarios ipsum
+			lorem lorem horarios ipsum</p>
+
+		</div>
+		<div class="creditos">
+			<h2>formaFIT</h2>
+			<h5>Todos los derechos reservados 2022©</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+		</div>
+	</div>
+</section>
 </body>
 </html>

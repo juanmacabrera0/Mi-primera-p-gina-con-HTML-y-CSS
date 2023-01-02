@@ -1,0 +1,587 @@
+*{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+input {
+  background-color: #f1f1f1;
+  padding-left: 0.5em;
+  font-size: 1.25em;
+  height: 3em;
+  margin: 0.7em 0.15em;
+  border-radius: 1px;
+  width: 90%;}
+select {
+  background-color: #f1f1f1;
+  padding-left: 0.5em;
+  font-size: 1.25em;
+  height: 2em;
+  margin: 0.7em 0.15em;
+  border-radius: 1px;
+  width: 90%;
+}
+input:focus{
+  background-color: #ddd;
+  outline: none;
+}
+select:focus{
+    background-color: #ddd;
+  outline: none;
+}
+.top-container {
+  width: 100vw%;
+}
+.top-container {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+.top-container #links{
+    display: none;
+}
+.top-container .logo {
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 5vh;
+  font-weight: bold;
+}
+.top-container a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+#links:first-child {
+  color: #f2f20d;
+}
+.nav:last-child {
+  background-color: #f2f20d;
+  color: black;
+}
+.top-container a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.top-container nav a:hover { 
+color: yellow;
+ }
+ .top-container .nav:last-child:hover {
+  background-color: black;
+  color: white;
+ }
+ .top-container a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ .active {
+  background-color: #04AA6D;
+  color: white;
+ }
+ .top-container a.icon {
+  background-color: transparent;
+  color: white;
+  padding: 1.75em 1em;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+ }
+
+ /*///////////////////*/
+ .title {
+  text-align: center;
+  padding: 30px 0px 40px;
+}
+.dynamic-title {
+  float: none;
+  display: table;
+  width: auto;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px black;
+}
+
+span.gold-title {
+    font-size: 5vh !important;
+    color: #f2f20d;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  font-style: normal;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
+
+/*/////////*/
+#top-yoga .container{
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center center;
+
+}
+#top-yoga .imgcont{
+  background-image: url(yogatop.jpg);
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+#top-yoga .container h3{
+  margin-top: .5em;
+  font-size: 3em;
+  color: #f2f20d;
+}
+#top-yoga .container p{
+  font-size: 1em;
+  padding: 1em 1em 1em;
+}
+
+#top-yoga .container .caracteristicas{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+}
+#top-yoga .container .uno{ 
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.25em;
+
+}
+#top-yoga .container .dos{
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.25em;
+}
+#top-yoga .container .tres{
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 1.25em;
+
+}
+#top-yoga .container .cuatro{
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 1.25em;
+}
+#top-yoga .container .uno i{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #f2f20d;
+  font-size: 2em;
+
+}
+#top-yoga .container .dos i{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #f2f20d;
+  font-size: 2em;
+
+}
+#top-yoga .container .tres i{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #f2f20d;
+  font-size: 2em;
+
+}
+#top-yoga .container .cuatro i{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #f2f20d;
+  font-size: 2em;
+
+}
+#top-yoga button{
+  margin-top: 2em;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: black;
+  background-color: #f2f20d;
+  transition: 0.5s;
+  }
+#top-yoga button:hover{
+  color: white;
+  background-color: black;
+  }
+
+
+#img-yoga div:first-child{
+ height: 300px;
+ width: 100%;
+background-image: url(y1.jpg);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center top;
+position: relative;
+}
+#img-yoga div:nth-child(2){
+ height: 300px;
+ width: 100%;
+ background-image: url(y2.jpg);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center top;
+position: relative;
+}
+#img-yoga div:nth-child(3){
+ height: 300px;
+ width: 100%;
+background-image: url(y3.jpg);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center top;
+position: relative;
+}
+ /*FORMULARIO FINAL*/
+
+
+
+
+
+
+
+
+
+
+
+/**/
+#unite .container{
+  height: 73vh;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  align-items: center center;
+  margin: 0;
+}
+#unite .container h2 {
+  padding-top: 2vh;
+  color: white;
+  font-weight: bold;
+  font-size: 6vh;
+}
+#unite .container h3 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #f2f20d;
+  font-weight: bold;
+  margin: 5px 9px;
+}
+#unite .container p{
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+#unite button{
+  margin-bottom: 0;
+  margin-top: 0.6em;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: black;
+  background-color: #f2f20d;
+  transition: 0.5s;
+ }
+ #unite button:hover {
+  background-color: black;
+  color: white;
+}
+/*/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+#final .app {
+text-align: center;
+align-items: center center;
+color: white;
+  width: 100%;
+height: 10vh;
+background-color: black;
+display: inline-block;
+}
+#final .app .appstore{
+  height: 50px;
+  width: 170px;
+}
+#final .app .playstore{
+  height: 50px;
+  width: 170px;
+}
+#final h4{
+  font-size: 1.5em;
+  margin-bottom: .2em;
+}
+#final .redes{
+  color: white;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  align-items: center center;
+  background-color: black;
+  display: block;
+}
+#final .redes .ig{
+    height: 50px;
+  width: 50px;
+}
+#final .redes .tw{
+    height: 50px;
+  width: 50px;
+}
+#final .redes .fb{
+  height: 50px;
+  width: 50px;
+}
+#final .trabajo{
+  text-align: center;
+  align-items: center center;
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+}
+#final .trabajo button{
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid rgba(0,0,0,0.5);
+  color: white;
+  background-color: transparent;
+  transition: 0.5s;
+}
+#final .trabajo button:hover{
+  color: #f2f20d;
+}
+#final .trabajo button i{
+  color: yellow;
+}
+#final .direc {
+  text-align: center;
+  align-items: center center;
+  background-color: black;
+  width: 100%;
+  height: 33vh;
+  color: white;
+}
+#final .direc h4{
+  font-size: 1.75em;
+  margin-bottom: .2em;
+}
+#final .direc p{
+  font-size: 1em;
+}
+#final .creditos h2{
+  margin-top: 1em;
+  font-size: 2.5em;
+}
+#final .creditos h5 {
+  font-size: 1em;
+}
+#final .creditos p{
+  font-size: .8em;
+}
+
+
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+
+*/
+ @media (min-width: 1000px){
+header .top-container{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.top-container #links{
+    display: inline-block;
+    text-align: center;
+}
+header nav { 
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px;
+  display: flex;
+  font-size: 1.25em;
+ }
+ header .top-container .logo{
+  font-size: 60px;
+ }
+ .top-container .nav:last-child:hover {
+  background-color: black;
+  color: white;
+ }
+ .top-container a.icon {
+ display: none; 
+}
+#hero h1{
+  font-size: 100px;
+}
+#hero button {
+  font-size: 26px;
+}
+#actividades .container {
+  height: 400px;
+}
+#actividades .container h1{
+  font-size: 70px;
+}
+#actividades .container p{
+  font-size: 20px;
+  text-align: justify;
+  text-align: center;
+  margin: 10px 10px;
+}
+.slideshow-container {
+  display: inline-block;
+  width: 100vw;
+}
+#lista-actividades .slideshow-container .act-fade {
+  display: block;
+  width: 98.70vw;
+  height: 500px;
+}
+#lista-actividades .slideshow-container .act-fade h2{
+  font-size: 70px;
+  padding-top: 160px;
+}
+#lista-actividades .slideshow-container .act-fade button{
+  margin-top: 30px;
+  font-size: 20px;
+}
+.prev, .next {
+display: none;
+}
+.dot{
+  display: none;
+}
+#centros .container {
+  height: 400px;
+}
+#centros .container h2{
+  font-size: 60px;
+}
+#centros .container p{
+  font-size: 20px;
+  text-align: justify;
+  text-align: center;
+}
+#lista-centros .container{
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  background-position: center;
+  margin-bottom: -12px;
+}
+#formafitplus .container { 
+  height: 500px;
+}
+#formafitplus .container h2 {
+  font-size: 50px;
+  padding: 10px 300px;
+  justify-content: center;
+}
+#formafitplus .container button {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+#unite .container{
+  height: 500px;
+  padding-top: 60px;
+}
+#unite h2{
+}
+
+#unite .container input {
+  font-size: 20px;
+  margin-top: 8px;
+}
+#unite .container select {
+  font-size: 25px;
+  margin-top: 8px;
+}
+#unite .container button {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+-
